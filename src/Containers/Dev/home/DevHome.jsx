@@ -23,7 +23,9 @@ const DevHome = () => {
       height : containerHidden ? '100%' : '100vh'
     }}>
       <PageLoader unique="devIn" />
-      <h2 className='font-bold text-6xl text-white'>helloe</h2>
+      <h2 className='font-bold text-6xl text-white px-8 md:px-24'>
+        This page is being worked on...
+      </h2>
     </div>
   )
 }

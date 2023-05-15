@@ -72,3 +72,14 @@ body {
 .reddish-bg {
         background-color: #600E00;
 }
+
+button:active,
+button:focus {
+        outline: none;
+}
+
+select:active,
+select:focus {
+        outline: none;
+        border: none;
+}

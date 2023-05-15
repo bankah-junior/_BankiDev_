@@ -1,0 +1,74 @@
+#banki, #dev, #intro {
+    transition: opacity 500ms;
+}
+
+#banki, #dev {
+        border: 3px solid rgba(0,0,0,1.0);
+}
+
+/* Dev Page intro */
+#devIn {
+    background-image: url('./assets/Dev/devLoading.gif');
+    background-position: center;
+    background-size: cover;
+}
+/* End Dev Page intro */
+
+/* Banki Page intro */
+#bankiIn {
+    background-position: center;
+    background-size: cover;
+    -webkit-animation: bgChanger 2s ease-in-out both;
+        animation: bgChanger 2s ease-in-out both;
+}
+
+@keyframes bgChanger {
+        from {
+                -webkit-background-image: url('./assets/Banki/bankiLoading1.jpg');
+                        background-image: url('./assets/Banki/bankiLoading1.jpg');
+        }
+        to {
+                -webkit-background-image: url('./assets/Banki/bankiLoading2.jpg');
+                        background-image: url('./assets/Banki/bankiLoading2.jpg');
+        }
+}
+
+/* End Banki Page intro */
+
+/* Banki Page */
+.nav-header{
+    background-image: url('./assets/Banki/bankiHeader.jpg');
+    background-position: center;
+    background-size: cover;
+}     
+
+/* End of Banki Page */
+
+.landing-container {
+    background-image: url('./assets/landingBg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+:root {
+  --font-family: Space Grotesk, sans-serif;
+
+  --primary1: hsl(204,23.8%,95.9%);
+  --background1: #0F1624;
+  --accent1: hsl(34.9,98.6%,72.9%);
+  --button: hsl(205.1,100%,36.1%);
+  --background2: hsl(232.7,27.3%,23.7%);
+
+  --sm: screen and (max-width: 640px);
+  --md: screen and (max-width: 768px);
+  --lg: screen and (max-width: 1024px);
+  --xl: screen and (max-width: 1280px);
+}
+
+body {
+        background-color: var(--background1);
+}
+
+.reddish-bg {
+        background-color: #600E00;
+}

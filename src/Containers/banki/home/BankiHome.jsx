@@ -5,12 +5,16 @@ import BlogImg from '../../../assets/Banki/bankiTradeBlog.jpg';
 import AdviceImg from '../../../assets/Banki/bankiAdvice.jpg';
 import { Ri24HoursFill } from 'react-icons/ri';
 import { GiMoneyStack } from 'react-icons/gi';
-import { MdAccessibility, MdFamilyRestroom } from 'react-icons/md';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai';
+import { MdEmail, MdAccessibility, MdFamilyRestroom } from 'react-icons/md';
+import { BiPhoneCall } from 'react-icons/bi';
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle, AiFillYoutube } from 'react-icons/ai';
 import { FcBusinessman, FcBusinesswoman, FcFlowChart, FcManager } from 'react-icons/fc';
 import { AboutDB, ForexReasons } from './index';
 import { CC, IconText, PageLoader, SubjectBody } from '../../../Components';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const BankiHome = () => {
   /*
@@ -23,6 +27,7 @@ const BankiHome = () => {
     const timer = setTimeout(() => {
       isContainerHidden(true);
     }, 2500);
+    AOS.init({duration: 2000});
 
     return () => clearTimeout(timer);
   }, []);
@@ -50,13 +55,21 @@ const BankiHome = () => {
           </div>
           <nav className='px-8 md:px-24 flex md:flex-row flex-col md:justify-between items-center my-2'>
             <div className="logo md:mt-0 mt-4">
-              <img src={logo} alt="logo" className="w-20" />
+              <Link to="/" title="BankiDev"> <img src={logo} alt="logo" className="w-20" /> </Link>
             </div>
             <ul className="menu flex md:mt-0 mt-4">
-              <li className='md:w-24 w-16 mr-2'>Home</li>
-              <li className='md:w-24 w-16 mr-2'>About</li>
-              <li className='md:w-24 w-16 mr-2'>Blog</li>
-              <li className='md:w-24 w-16'>Contact</li>
+              <a href="#home">
+                <li className='md:w-24 w-16 mr-2'>Home</li>
+              </a>
+              <a href="#about">
+                <li className='md:w-24 w-16 mr-2'>About</li>
+              </a>
+              <a href="#blog">
+                <li className='md:w-24 w-16 mr-2'>Blog</li>
+              </a>
+              <a href="#contact">
+                <li className='md:w-24 w-16'>Contact</li>
+              </a>
             </ul>
           </nav>
           <div className="header px-8 md:px-24 py-16 mb-8" id='home'>
@@ -79,11 +92,11 @@ const BankiHome = () => {
             <div className="w-100-70 hidden md:flex">
               <img src={AboutImg} alt="Me" className='w-full' />
             </div>
-            <div className='md:w-100-30'>
-              <SubjectBody subject={ AboutDB.intro.subject } body={ AboutDB.intro.body } />
-              <SubjectBody subject={ AboutDB.background.subject } body={ AboutDB.background.body } />
-              <SubjectBody subject={ AboutDB.tradingPhilosophy.subject } body={ AboutDB.tradingPhilosophy.body } />
-              <SubjectBody subject={ AboutDB.dev.subject } body={ AboutDB.dev.body } />
+            <div className='md:w-100-30' >
+              <SubjectBody subject={ AboutDB.intro.subject } body={ AboutDB.intro.body } animeNameSB={"fade-right"} />
+              <SubjectBody subject={ AboutDB.background.subject } body={ AboutDB.background.body } animeNameSB={"fade-right"} />
+              <SubjectBody subject={ AboutDB.tradingPhilosophy.subject } body={ AboutDB.tradingPhilosophy.body } animeNameSB={"fade-right"} />
+              <SubjectBody subject={ AboutDB.dev.subject } body={ AboutDB.dev.body } animeNameSB={"fade-right"} />
             </div>
           </div>
         </div>
@@ -93,10 +106,10 @@ const BankiHome = () => {
         <div className="why-forex-section px-8 py-8 reddish-bg">
           <h3 className='font-bold md:text-4xl text-2xl text-center mb-4'>Why Trade Forex</h3>
           <div className="reasons flex md:flex-row flex-col justify-between">
-            <IconText icon={<FcFlowChart size="40" />} title={ ForexReasons.one.main } brief={ ForexReasons.one.meaning } />
-            <IconText icon={<MdAccessibility size="40" />} title={ ForexReasons.two.main } brief={ ForexReasons.two.meaning } />
-            <IconText icon={<GiMoneyStack size="40" />} title={ ForexReasons.three.main } brief={ ForexReasons.three.meaning } />
-            <IconText icon={<Ri24HoursFill size="40" />} title={ ForexReasons.four.main } brief={ ForexReasons.four.meaning } />
+            <IconText icon={<FcFlowChart size="40" />} title={ ForexReasons.one.main } brief={ ForexReasons.one.meaning } animeNameIT={"zoom-in"} />
+            <IconText icon={<MdAccessibility size="40" />} title={ ForexReasons.two.main } brief={ ForexReasons.two.meaning } animeNameIT={"zoom-in"} />
+            <IconText icon={<GiMoneyStack size="40" />} title={ ForexReasons.three.main } brief={ ForexReasons.three.meaning } animeNameIT={"zoom-in"} />
+            <IconText icon={<Ri24HoursFill size="40" />} title={ ForexReasons.four.main } brief={ ForexReasons.four.meaning } animeNameIT={"zoom-in"} />
           </div>
         </div>
         {/* End of Why Trade Forex */}
@@ -105,10 +118,10 @@ const BankiHome = () => {
         <div className="blog-section px-8 md:px-24 py-8" id='blog'>
           <h3 className='font-bold md:text-4xl text-2xl text-center mb-4'>What is Forex?</h3>
           <div className="blog-container w-full flex flex-col md:flex-row">
-            <div className="blog-img">
+            <div className="blog-img" data-aos="fade-down-left">
               <img src={BlogImg} alt="Trader" />
             </div>
-            <div className="blog-info p-4">
+            <div className="blog-info p-4" data-aos="fade-down-right">
               <p><b>Forex</b> is simply FOREIGN EXCHANGE and its abbreviation is <acronym title="Forex">FX</acronym>. In FX, you can trade:</p>
               <ol>
                 <li className='my-2'>1) <u>Currencies</u>: EURO, USD, NZD, AUD, CHF, GBP, JPY. They are mostly traded in pairs like: EUR/USD, GBP/USD, USD/JPY, USD/CAD, USD/CHF, NZD/USD, AUD/NZD and more</li>
@@ -126,10 +139,10 @@ const BankiHome = () => {
         <div className="credits px-8 md:px-24 py-8">
           <h3 className='font-bold md:text-4xl text-2xl mb-4'>Credits</h3>
           <div className='flex flex-wrap md:justify-between justify-center items-center w-full'>
-            <CC CCicon={<FcManager size="35" color='#000'/>} CCtitle={"Uncle"} CCname={"Kingsley Gyebi"} />
-            <CC CCicon={<MdFamilyRestroom size="35" color='#000'/>} CCtitle={"Family"} CCname={"Mum Dad Sister"} />
-            <CC CCicon={<FcBusinesswoman size="35" color='#000'/>} CCtitle={"Helper"} CCname={"Olivia Dosimey"} />
-            <CC CCicon={<FcBusinessman size="35" color='#000'/>} CCtitle={"Competitor"} CCname={"Boakye Samuel"} />
+            <CC CCicon={<FcManager size="35" color='#000'/>} CCtitle={"Uncle"} CCname={"Kingsley Gyebi"} animeNameCC={"zoom-in"} />
+            <CC CCicon={<MdFamilyRestroom size="35" color='#000'/>} CCtitle={"Family"} CCname={"Mum Dad Sister"} animeNameCC={"zoom-in"} />
+            <CC CCicon={<FcBusinesswoman size="35" color='#000'/>} CCtitle={"Helper"} CCname={"Olivia Dosimey"} animeNameCC={"zoom-in"} />
+            <CC CCicon={<FcBusinessman size="35" color='#000'/>} CCtitle={"Competitor"} CCname={"Boakye Samuel"} animeNameCC={"zoom-in"} />
           </div>
         </div>
         {/* End of Credits */}
@@ -138,10 +151,10 @@ const BankiHome = () => {
         <div className="advice-section px-8 md:px-24 py-8">
           <h3 className='font-bold md:text-4xl text-2xl text-center mb-4'>Top Level Tips</h3>
           <div className="advice-container w-full flex flex-col md:flex-row">
-            <div className="advice-img">
+            <div className="advice-img" data-aos="fade-right">
               <img src={AdviceImg} alt="Trader" />
             </div>
-            <div className="advice-info p-4">
+            <div className="advice-info p-4" data-aos="fade-left">
               <p>Forex trading is not a day/night something to do. You need to build yourself very well. Here are some top tips to sustain you:</p>
               <ol>
                 <li className='my-2'>1) <u>Patient</u>: This is essential when it comes to trading. These are some reasons: Waiting for Opportunities, Allowing Trades to Develop, Dealing with Drawdowns and Sticking to the Plan.</li>
@@ -157,16 +170,17 @@ const BankiHome = () => {
         {/* End of My Advice */}
 
         {/* Contact */}
-        <div className="contact-section px-8 md:px-24 py-8 reddish-bg">
-          <div className="text-white text-center">
-            <p>+233 262 991 910</p>
-            <p>antqueenbankah95@gmail.com</p>
+        <div className="contact-section px-8 md:px-24 py-8 reddish-bg" id="contact">
+          <div className="text-white text-center flex flex-col items-center justify-center">
+            <p><a href="tel:+233262991910" className='flex justify-center items-center'> <BiPhoneCall size={20} /> <span className='ml-2'>+233 262 991 910</span></a></p>
+            <p><a href="mailto:antqueenbankah95@gmail.com" className='flex justify-center items-center'> <MdEmail size={20} /> <span className='ml-2'>antqueenbankah95@gmail.com</span></a></p>
           </div>
           <div className="social flex justify-around mt-4">
-            <AiFillGithub size={30} />
-            <AiFillLinkedin size={30} />
-            <AiFillInstagram size={30} />
-            <AiFillTwitterCircle size={30} />
+            <a href="https://github.com/bankah-junior" title='Gitbub'> <AiFillGithub size={30} /> </a>
+            <a href="https://www.linkedin.com/in/anthony-bekoe-bankah-080448240" title='LinkedIn'> <AiFillLinkedin size={30} /> </a>
+            <a href="https://instagram.com/iam.bankah?igshid=ZGUzMzM3NWJiOQ==" title='Instagram'> <AiFillInstagram size={30} /> </a>
+            <a href="https://twitter.com/iam_bankah?t=UFouGnCo6AL1bxU_MMVRg&s=09" title='Twitter'> <AiFillTwitterCircle size={30} /> </a>
+            <a href="https://www.youtube.com/@welearn2" title='YouTube'> <AiFillYoutube size={30} /> </a>
           </div>
         </div>
         {/* End of Contact */}

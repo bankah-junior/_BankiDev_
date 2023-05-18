@@ -1,6 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import { SiCodersrank } from 'react-icons/si';
+import { BsCashStack } from 'react-icons/bs';
 import { BottomBar, HeaderText, LinkContainer, Links, MainDiv, SubDiv, TopBar } from './landingStyle';
 
 const Landing = () => {
@@ -8,6 +10,8 @@ const Landing = () => {
     const [isVisible2, setIsVisible2] = useState(false);
     const [isVisible3, setIsVisible3] = useState(false);
     const [isVisible4, setIsVisible4] = useState(false);
+    const secretPassToBanki = "jnr";
+    const history = useHistory();
 
     useEffect(() => {
         const timer2 =  setTimeout(() => {
@@ -27,18 +31,32 @@ const Landing = () => {
         }
     }, []);
 
+    function bankiBtn() {
+        var input = prompt('Enter password:');
+        if(secretPassToBanki === input) {
+            alert('Access granted!!');
+            history.push('/banki');
+        } else {
+            alert('Access denied!!');
+        };
+    };
+
   return (
     <div >
         <div className={MainDiv}>
             <div className={SubDiv} style={{backgroundColor: "rgba(0,0,0,0.3)"}}>
                 <div className={TopBar} style={{ border: "2px solid #ddd" }} ></div>
                 <h2 className={HeaderText} id="intro" style={{ opacity: isVisible2 ? '1' : '0' }}>
-                    Welcome to the official website of Bankah Anthony Bekoe. <br className="hidden md:block"/> 
+                    Welcome to the twin portfolio website of Bankah Anthony. <br className="hidden md:block"/> 
                     Click on a button to view portfolio
                 </h2>
                 <div className={LinkContainer}>
-                    <Link to="/banki" className={Links} id="banki" style={{ opacity: isVisible3 ? '1' : '0' }}>Banki</Link>
-                    <Link to="/dev" className={Links} id="dev" style={{ opacity: isVisible4 ? '1' : '0' }}>Dev</Link>
+                    <Link to="#home" className={Links} id="banki" style={{ opacity: isVisible3 ? '1' : '0' }} onClick={() => bankiBtn()} >
+                        <BsCashStack size={30} title='Banki' />
+                    </Link>
+                    <Link to="/dev" className={Links} id="dev" style={{ opacity: isVisible4 ? '1' : '0' }}>
+                        <SiCodersrank size={30} title='Dev' />
+                    </Link>
                 </div>
                 <div className={BottomBar} style={{ border: "2px solid #ddd" }} ></div>
             </div>

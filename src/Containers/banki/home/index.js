@@ -13,7 +13,11 @@ export const AboutDB = {
     },
     dev: {
         subject: "Dev Side",
-        body: "Banki is also a Dev. I am a developer with years of experience. I have worked on serial projects which will make you recommend me. Things relating to developments as in coding, designing and stuffs, check my Dev portfolio for all the information you will need."
+        body: "Banki is also a Dev. I am a developer with years of experience. I have worked on serial projects which will make you recommend me. Things relating to developments as in coding, designing and stuffs, check my Dev portfolio for all the information you will need.",
+        devLink: {
+            name: "Dev Page",
+            link: "/dev"
+        }
     }
 };
 

@@ -1,9 +1,15 @@
 import React from 'react';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-const CC = ({ CCicon, CCtitle, CCname }) => {
+const CC = ({ CCicon, CCtitle, CCname, animeNameCC }) => {
+  useEffect(() => {
+    AOS.init({duration: 2000});
+  }, []);
   return (
     <div>
-      <div className="flex flex-col border-4 border-white rounded-lg p-4 m-4">
+      <div className="flex flex-col border-4 border-white rounded-lg p-4 m-4" data-aos={animeNameCC}>
         <div className="top py-10 flex justify-center items-center">
           <div className="p-2 bg-white rounded-full">
             {CCicon}

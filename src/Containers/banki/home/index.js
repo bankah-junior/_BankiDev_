@@ -5,7 +5,7 @@ export const AboutDB = {
     },
     background: {
         subject: "Background",
-        body: "About my experience and qualifications, I have none. This year (2023) is when I started with forex and with that I have learnt a lot but few. Preparing myself, knowing terminologies and how stuffs run on the market. The little I have known has really enlightened me."
+        body: "About my experience and qualifications, I have enough not to blow an account but grow it. (2023) is when I started with forex and with that I have learnt a lot but few. Preparing myself, knowing terminologies and how stuffs run on the market. The little I have known has really enlightened me."
     },
     tradingPhilosophy: {
         subject: "Trading Philosophy",
@@ -13,7 +13,11 @@ export const AboutDB = {
     },
     dev: {
         subject: "Dev Side",
-        body: "Banki is also a Dev. I am a developer with years of experience. I have worked on serial projects which will make you recommend me. Things relating to developments as in coding, designing and stuffs, check my Dev portfolio for all the information you will need."
+        body: "I am a developer with some level of experience. I have worked on serial projects which will make you recommend me. Things relating to developments as in coding, designing and stuffs, check my Dev portfolio for all the information you will need. Looking forward to hear from you.",
+        devLink: {
+            name: "Dev Page",
+            link: "/dev"
+        }
     }
 };
 

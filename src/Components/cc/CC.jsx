@@ -1,6 +1,12 @@
 import React from 'react';
+// import { useEffect } from 'react';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 const CC = ({ CCicon, CCtitle, CCname }) => {
+  // useEffect(() => {
+  //   AOS.init({duration: 2000});
+  // }, []);
   return (
     <div>
       <div className="flex flex-col border-4 border-white rounded-lg p-4 m-4">

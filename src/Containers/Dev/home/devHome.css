@@ -1,0 +1,36 @@
+.dev__container__navbar {
+    z-index: 999;
+}
+
+.head__container {
+    line-height: 2.5rem;
+}
+
+.sub-head {
+    -webkit-text-stroke: 1px #ffffff;
+}
+
+.sub-head2 {
+    -webkit-text-stroke: .5px #ffffff;
+}
+
+.dev__container__about-left {
+    background-image: url("../../../assets/Dev/user1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.dev__container__skills {
+    background-image: url("../../../assets/Dev/devSkills.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  min-width: 18rem;
+  position: relative;
+  margin: 0 auto;
+}
+

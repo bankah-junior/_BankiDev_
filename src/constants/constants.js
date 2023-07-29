@@ -57,3 +57,13 @@ export const DropOfWisdomDB = {
   visit: 'https://github.com/bankah-junior/',
   id: 5,
 }
+
+export const TheGuide = {
+  title: 'The Guide',
+  description: "This website helps in generating personal timetable",
+  image: '../../../assets/Projects/TheGuide.png',
+  tags: "HTML, CSS, JavaScript",
+  source: 'https://github.com/bankah-junior/TheGuide.git',
+  visit: 'https://theguideptt.netlify.app/',
+  id: 6,
+}

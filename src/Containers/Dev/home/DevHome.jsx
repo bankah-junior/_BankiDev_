@@ -164,8 +164,8 @@ const DevHome = () => {
             </div>
             <div className="dev__container__about-right md:w-100-50 flex flex-col justify-center ml-12">
               <div className="flex flex-col text-right items-end text-white px-6">
-                <h2 className="text-4xl md:text-6xl font-bold">ABOUT ME</h2>
-                <p className="text-lg mt-8 pl-2 md:pl-0">
+                <h2 className="text-4xl md:text-6xl font-bold mt-8">ABOUT ME</h2>
+                <p className="text-lg mt-2 pl-2 md:pl-0">
                   I am Anthony Bekoe Bankah, a passionate Computer Science and
                   Engineering student with a love for technology and innovation.
                   I chose this field because of its dynamic nature and the

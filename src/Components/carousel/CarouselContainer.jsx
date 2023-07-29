@@ -4,9 +4,9 @@ import MM from '../../assets/Projects/MindMeld.PNG';
 import MR from '../../assets/Projects/MyRecipe.PNG';
 import DOW from '../../assets/Projects/DropOfWisdom.PNG';
 import CTB from '../../assets/Projects/ConnectToBuyers.PNG';
-import NFX from '../../assets/Projects/Netflix.PNG';
+import TG from '../../assets/Projects/TheGuide.png';
 import CHTS from '../../assets/Projects/Chatters.PNG';
-import { MindMeldDB, MyRecipeDB, DropOfWisdomDB, ConnectToBuyersDB, NetflixCloneDB, ChattersDB } from '../../constants/constants';
+import { MindMeldDB, MyRecipeDB, DropOfWisdomDB, ConnectToBuyersDB, TheGuide, ChattersDB } from '../../constants/constants';
 
 export default class PreviousNextMethods extends Component { 
     constructor(props) { 
@@ -86,13 +86,13 @@ export default class PreviousNextMethods extends Component {
                     </div> 
                     <div key={5}> 
                         <div className="flex flex-col w-full">
-                            <img src={NFX} alt="NFX" />
-                            <h3 className="md:text-3xl text-2xl font-bold px-2"> {NetflixCloneDB.title} </h3>
-                            <p className="px-2"> { NetflixCloneDB.description } </p>
-                            <p className="px-2"> { NetflixCloneDB.tags } </p>
+                            <img src={TG} alt="TG" />
+                            <h3 className="md:text-3xl text-2xl font-bold px-2"> {TheGuide.title} </h3>
+                            <p className="px-2"> { TheGuide.description } </p>
+                            <p className="px-2"> { TheGuide.tags } </p>
                             <div className="flex mt-2 px-2">
                                 <button className="px-8 py-1 border-2 border-white rounded-lg w-full">
-                                    <a href={NetflixCloneDB.visit}>View Site</a>
+                                    <a href={TheGuide.visit}>View Site</a>
                                 </button>
                             </div>
                         </div>

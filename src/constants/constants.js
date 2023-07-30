@@ -67,3 +67,33 @@ export const TheGuide = {
   visit: 'https://theguideptt.netlify.app/',
   id: 6,
 }
+
+export const ClonedIG = {
+  title: 'Instagram Clone',
+  description: "Cloned version of Instagram Home Page",
+  image: '../../../assets/Projects/ClonedIG.png',
+  tags: "React, JavaScript",
+  source: 'https://github.com/bankah-junior/Cloned-IG-UI.git',
+  visit: 'https://clonedinsta.netlify.app/',
+  id: 7,
+}
+
+export const Sneakers = {
+  title: 'OLAB Toes',
+  description: "This is a simple landing website of Sneakers Collection",
+  image: '../../../assets/Projects/ClonedIG.png',
+  tags: "HTML, CSS, JavaScript",
+  source: 'https://github.com/bankah-junior/Sneaker-Landing-Page.git',
+  visit: 'https://olab-toes.netlify.app/',
+  id: 8,
+}
+
+export const AnimatedLogin = {
+  title: 'CodeInn',
+  description: "CodeInn is Animated Login page",
+  image: '../../../assets/Projects/ClonedIG.png',
+  tags: "HTML, CSS",
+  source: 'https://github.com/bankah-junior/Animated-Login.git',
+  visit: 'https://codeinnlogin.netlify.app/',
+  id: 9,
+}

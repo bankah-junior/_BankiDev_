@@ -6,7 +6,10 @@ import DOW from '../../assets/Projects/DropOfWisdom.PNG';
 import CTB from '../../assets/Projects/ConnectToBuyers.PNG';
 import TG from '../../assets/Projects/TheGuide.png';
 import CHTS from '../../assets/Projects/Chatters.PNG';
-import { MindMeldDB, MyRecipeDB, DropOfWisdomDB, ConnectToBuyersDB, TheGuide, ChattersDB } from '../../constants/constants';
+import CIG from '../../assets/Projects/ClonedIG.png';
+import Sks from '../../assets/Projects/Sneakers.png';
+import AL from '../../assets/Projects/AnimatedLogin.png';
+import { MindMeldDB, MyRecipeDB, DropOfWisdomDB, ConnectToBuyersDB, TheGuide, ChattersDB, ClonedIG, Sneakers,AnimatedLogin } from '../../constants/constants';
 
 export default class PreviousNextMethods extends Component { 
     constructor(props) { 
@@ -106,6 +109,45 @@ export default class PreviousNextMethods extends Component {
                             <div className="flex mt-2 px-2">
                                 <button className="px-8 py-1 border-2 border-white rounded-lg w-full">
                                     <a href={ChattersDB.visit}>View Site</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div key={7}> 
+                        <div className="flex flex-col w-full">
+                            <img src={CIG} alt="CIG" />
+                            <h3 className="md:text-3xl text-2xl font-bold px-2"> {ClonedIG.title} </h3>
+                            <p className="px-2"> { ClonedIG.description } </p>
+                            <p className="px-2"> { ClonedIG.tags } </p>
+                            <div className="flex mt-2 px-2">
+                                <button className="px-8 py-1 border-2 border-white rounded-lg w-full">
+                                    <a href={ClonedIG.visit}>View Site</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div> 
+                    <div key={8}> 
+                        <div className="flex flex-col w-full">
+                            <img src={Sks} alt="Sks" />
+                            <h3 className="md:text-3xl text-2xl font-bold px-2"> {Sneakers.title} </h3>
+                            <p className="px-2"> { Sneakers.description } </p>
+                            <p className="px-2"> { Sneakers.tags } </p>
+                            <div className="flex mt-2 px-2">
+                                <button className="px-8 py-1 border-2 border-white rounded-lg w-full">
+                                    <a href={Sneakers.visit}>View Site</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div> 
+                    <div key={8}> 
+                        <div className="flex flex-col w-full">
+                            <img src={AL} alt="AL" />
+                            <h3 className="md:text-3xl text-2xl font-bold px-2"> {AnimatedLogin.title} </h3>
+                            <p className="px-2"> { AnimatedLogin.description } </p>
+                            <p className="px-2"> { AnimatedLogin.tags } </p>
+                            <div className="flex mt-2 px-2">
+                                <button className="px-8 py-1 border-2 border-white rounded-lg w-full">
+                                    <a href={AnimatedLogin.visit}>View Site</a>
                                 </button>
                             </div>
                         </div>

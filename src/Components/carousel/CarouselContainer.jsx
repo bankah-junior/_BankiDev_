@@ -1,12 +1,17 @@
 import React, { Component } from "react"; 
 import Slider from "react-slick"; 
+import './carouselContainer.css';
 import MM from '../../assets/Projects/MindMeld.PNG';
 import MR from '../../assets/Projects/MyRecipe.PNG';
 import DOW from '../../assets/Projects/DropOfWisdom.PNG';
 import CTB from '../../assets/Projects/ConnectToBuyers.PNG';
-import NFX from '../../assets/Projects/Netflix.PNG';
-import CHTS from '../../assets/Projects/Chatters.PNG';
-import { MindMeldDB, MyRecipeDB, DropOfWisdomDB, ConnectToBuyersDB, NetflixCloneDB, ChattersDB } from '../../constants/constants';
+import TG from '../../assets/Projects/TheGuide.png';
+import CIG from '../../assets/Projects/ClonedIG.png';
+import Sks from '../../assets/Projects/Sneakers.png';
+import AL from '../../assets/Projects/AnimatedLogin.png';
+import BFXC from '../../assets/Projects/bfx-calculator.png';
+import PB from '../../assets/Projects/pipsBank.png';
+import { MindMeldDB, MyRecipeDB, DropOfWisdomDB, ConnectToBuyersDB, TheGuide, ClonedIG, Sneakers, AnimatedLogin, BFX_Calc, Pips_Bank } from '../../constants/constants';
 
 export default class PreviousNextMethods extends Component { 
     constructor(props) { 
@@ -37,11 +42,17 @@ export default class PreviousNextMethods extends Component {
                             <img src={MM} alt="MM" />
                             <h3 className="md:text-3xl text-2xl font-bold px-2"> {MindMeldDB.title} </h3>
                             <p className="px-2"> { MindMeldDB.description } </p>
-                            <p className="px-2"> { MindMeldDB.tags } </p>
+                            <p className="px-2 m-2">
+                                <span className="mr-2">[</span>
+                                { MindMeldDB.tags }
+                                <span className="ml-2">]</span>
+                            </p>
                             <div className="flex mt-2 px-2">
-                                <button className="px-8 py-1 border-2 border-white rounded-lg w-full">
-                                    <a href={MindMeldDB.visit}>View Site</a>
-                                </button>
+                                <a href={MindMeldDB.visit} className="w-full">
+                                    <button className="btn px-8 py-1 border-2 border-white rounded-lg w-full">
+                                        View Site
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div> 
@@ -50,9 +61,13 @@ export default class PreviousNextMethods extends Component {
                             <img src={MR} alt="MR" />
                             <h3 className="md:text-3xl text-2xl font-bold px-2"> {MyRecipeDB.title} </h3>
                             <p className="px-2"> { MyRecipeDB.description } </p>
-                            <p className="px-2"> { MyRecipeDB.tags } </p>
+                            <p className="px-2 m-2">
+                                <span className="mr-2">[</span>
+                                { MyRecipeDB.tags }
+                                <span className="ml-2">]</span>
+                            </p>
                             <div className="flex mt-2 px-2">
-                                <button className="px-8 py-1 border-2 border-white rounded-lg mr-4 w-full" disabled>
+                                <button className="btn px-8 py-1 border-2 border-white rounded-lg mr-4 w-full" disabled>
                                     Not Deployed
                                 </button>
                             </div>
@@ -63,9 +78,13 @@ export default class PreviousNextMethods extends Component {
                             <img src={DOW} alt="DOW" />
                             <h3 className="md:text-3xl text-2xl font-bold px-2"> {DropOfWisdomDB.title} </h3>
                             <p className="px-2"> { DropOfWisdomDB.description } </p>
-                            <p className="px-2"> { DropOfWisdomDB.tags } </p>
+                            <p className="px-2 m-2">
+                                <span className="mr-2">[</span>
+                                { DropOfWisdomDB.tags }
+                                <span className="ml-2">]</span>
+                            </p>
                             <div className="flex mt-2 px-2">
-                                <button className="px-8 py-1 border-2 border-white rounded-lg mr-4 w-full" disabled>
+                                <button className="btn px-8 py-1 border-2 border-white rounded-lg mr-4 w-full" disabled>
                                     Not Deployed
                                 </button>
                             </div>
@@ -76,40 +95,134 @@ export default class PreviousNextMethods extends Component {
                             <img src={CTB} alt="CTB" />
                             <h3 className="md:text-3xl text-2xl font-bold px-2"> {ConnectToBuyersDB.title} </h3>
                             <p className="px-2"> { ConnectToBuyersDB.description } </p>
-                            <p className="px-2"> { ConnectToBuyersDB.tags } </p>
+                            <p className="px-2 m-2">
+                                <span className="mr-2">[</span>
+                                { ConnectToBuyersDB.tags }
+                                <span className="ml-2">]</span>
+                            </p>
                             <div className="flex mt-2 px-2">
-                                <button className="px-8 py-1 border-2 border-white rounded-lg w-full">
-                                    <a href={ConnectToBuyersDB.visit}>View Site</a>
-                                </button>
+                                <a href={ConnectToBuyersDB.visit} className="w-full">
+                                    <button className="btn px-8 py-1 border-2 border-white rounded-lg w-full">
+                                        View Site
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div> 
                     <div key={5}> 
                         <div className="flex flex-col w-full">
-                            <img src={NFX} alt="NFX" />
-                            <h3 className="md:text-3xl text-2xl font-bold px-2"> {NetflixCloneDB.title} </h3>
-                            <p className="px-2"> { NetflixCloneDB.description } </p>
-                            <p className="px-2"> { NetflixCloneDB.tags } </p>
+                            <img src={TG} alt="TG" />
+                            <h3 className="md:text-3xl text-2xl font-bold px-2"> {TheGuide.title} </h3>
+                            <p className="px-2"> { TheGuide.description } </p>
+                            <p className="px-2 m-2">
+                                <span className="mr-2">[</span>
+                                { TheGuide.tags }
+                                <span className="ml-2">]</span>
+                            </p>
                             <div className="flex mt-2 px-2">
-                                <button className="px-8 py-1 border-2 border-white rounded-lg w-full">
-                                    <a href={NetflixCloneDB.visit}>View Site</a>
-                                </button>
+                                <a href={TheGuide.visit} className="w-full">
+                                    <button className="btn px-8 py-1 border-2 border-white rounded-lg w-full">
+                                        View Site
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div> 
                     <div key={6}> 
                         <div className="flex flex-col w-full">
-                            <img src={CHTS} alt="CHTS" />
-                            <h3 className="md:text-3xl text-2xl font-bold px-2"> {ChattersDB.title} </h3>
-                            <p className="px-2"> { ChattersDB.description } </p>
-                            <p className="px-2"> { ChattersDB.tags } </p>
+                            <img src={CIG} alt="CIG" />
+                            <h3 className="md:text-3xl text-2xl font-bold px-2"> {ClonedIG.title} </h3>
+                            <p className="px-2"> { ClonedIG.description } </p>
+                            <p className="px-2 m-2">
+                                <span className="mr-2">[</span>
+                                { ClonedIG.tags }
+                                <span className="ml-2">]</span>
+                            </p>
                             <div className="flex mt-2 px-2">
-                                <button className="px-8 py-1 border-2 border-white rounded-lg w-full">
-                                    <a href={ChattersDB.visit}>View Site</a>
-                                </button>
+                                <a href={ClonedIG.visit} className="w-full">
+                                    <button className="btn px-8 py-1 border-2 border-white rounded-lg w-full">
+                                        View Site
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div> 
+                    <div key={7}> 
+                        <div className="flex flex-col w-full">
+                            <img src={Sks} alt="Sks" />
+                            <h3 className="md:text-3xl text-2xl font-bold px-2"> {Sneakers.title} </h3>
+                            <p className="px-2"> { Sneakers.description } </p>
+                            <p className="px-2 m-2">
+                                <span className="mr-2">[</span>
+                                { Sneakers.tags }
+                                <span className="ml-2">]</span>
+                            </p>
+                            <div className="flex mt-2 px-2">
+                                <a href={Sneakers.visit} className="w-full">
+                                    <button className="btn px-8 py-1 border-2 border-white rounded-lg w-full">
+                                        View Site
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div key={8}> 
+                        <div className="flex flex-col w-full">
+                            <img src={AL} alt="AL" />
+                            <h3 className="md:text-3xl text-2xl font-bold px-2"> {AnimatedLogin.title} </h3>
+                            <p className="px-2"> { AnimatedLogin.description } </p>
+                            <p className="px-2 m-2">
+                                <span className="mr-2">[</span>
+                                { AnimatedLogin.tags }
+                                <span className="ml-2">]</span>
+                            </p>
+                            <div className="flex mt-2 px-2">
+                                <a href={AnimatedLogin.visit} className="w-full">
+                                    <button className="btn px-8 py-1 border-2 border-white rounded-lg w-full">
+                                        View Site
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div key={9}> 
+                        <div className="flex flex-col w-full">
+                            <img src={BFXC} alt="BFXC" />
+                            <h3 className="md:text-3xl text-2xl font-bold px-2"> {BFX_Calc.title} </h3>
+                            <p className="px-2"> { BFX_Calc.description } </p>
+                            <p className="px-2 m-2 ">
+                                <span className="mr-2">[</span>
+                                { BFX_Calc.tags }
+                                <span className="ml-2">]</span>
+                            </p>
+                            <div className="flex mt-2 px-2">
+                                <a href={BFX_Calc.visit} className="w-full">
+                                    <button className="btn px-8 py-1 border-2 border-white rounded-lg w-full">
+                                        View Site
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div key={10}> 
+                        <div className="flex flex-col w-full">
+                            <img src={PB} alt="PB" />
+                            <h3 className="md:text-3xl text-2xl font-bold px-2"> {Pips_Bank.title} </h3>
+                            <p className="px-2"> { Pips_Bank.description } </p>
+                            <p className="px-2 m-2">
+                                <span className="mr-2">[</span>
+                                { Pips_Bank.tags }
+                                <span className="ml-2">]</span>
+                            </p>
+                            <div className="flex mt-2 px-2">
+                                <a href={Pips_Bank.visit} className="w-full">
+                                    <button className="btn px-8 py-1 border-2 border-white rounded-lg w-full">
+                                        View Site
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </Slider> 
                 <div style={{ textAlign: "center" }}> 
                     <button className="button" onClick={this.previous}> </button> 

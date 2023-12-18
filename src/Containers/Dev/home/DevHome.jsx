@@ -1,6 +1,7 @@
 import React from "react";
 import { PageLoader } from "../../../Components";
 import homeImage from "../../../assets/Dev/developer.gif";
+// import brand from '../../../assets/Brand.jpg'
 import aboutImage from "../../../assets/Dev/user1.jpg";
 import techImage from "../../../assets/Dev/devTechnologies.jpg";
 import contactImage from "../../../assets/Dev/devContact.jpg";
@@ -12,6 +13,7 @@ import {
   SiTailwindcss,
   SiMongodb,
   SiNodedotjs,
+  SiNextdotjs
 } from "react-icons/si";
 import { GrProjects, GrTechnology, GrContactInfo } from "react-icons/gr";
 import { GiSkills } from "react-icons/gi";
@@ -24,6 +26,7 @@ import {
   FaBootstrap,
   FaGitAlt,
   FaFigma,
+  FaVuejs,
 } from "react-icons/fa";
 import {
   AiFillGithub,
@@ -35,7 +38,7 @@ import {
 import { MdEmail } from "react-icons/md";
 import { BiPhoneCall } from "react-icons/bi";
 import { BsDatabaseFillCheck } from "react-icons/bs";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./devHome.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -131,7 +134,7 @@ const DevHome = () => {
                   </span>{" "}
                   <br />
                   <span className="sub-head2 text-2xl md:text-4xl font-bold">
-                    A Developer
+                    An Engineer/Developer
                   </span>
                 </h2>
                 <p className="md:w-100-30 text-white text-xl mt-8">
@@ -182,6 +185,11 @@ const DevHome = () => {
                   open to collaborations. Thank you for visiting my portfolio.
                   Let's create something incredible together!
                 </p>
+                <a href="https://drive.google.com/uc?export=download&id=1k94wHss8G2p64XFoDNf0IXORW95CY9t2" download="CV" class="flex">
+                  <button className="btn mt-4">
+                    <span>Download CV</span>
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -229,7 +237,7 @@ const DevHome = () => {
                     <FaReact size={20} />
                     <h2 className="font-bold text-xl md:text-2xl">Front-End</h2>
                     <p>
-                      Experience with <br /> React.js
+                      Experience with <br /> React.js & Vue.Js
                     </p>
                   </div>
                   <div className="back__end flex flex-col text-white w-100-70">
@@ -303,12 +311,18 @@ const DevHome = () => {
                         Node.js
                       </p>
                     </li>
+                    <li className="flex items-center my-8 md:mx-8">
+                      <FaVuejs />
+                      <p className="text-xl md:text-2xl font-semibold ml-2">
+                        Vue.js
+                      </p>
+                    </li>
                   </div>
                   <div className="skills2 flex flex-col">
                     <li className="flex items-center my-8 md:mx-8">
                       <SiMongodb />
                       <p className="text-xl md:text-2xl font-semibold ml-2">
-                        MongoDB
+                        NoSQL
                       </p>
                     </li>
                     <li className="flex items-center my-8 md:mx-8">
@@ -340,6 +354,12 @@ const DevHome = () => {
                         C++
                       </p>
                     </li>
+                    <li className="flex items-center my-8 md:mx-8">
+                      <SiNextdotjs />
+                      <p className="text-xl md:text-2xl font-semibold ml-2">
+                        Next.Js
+                      </p>
+                    </li>
                   </div>
                 </ul>
               </div>
@@ -365,10 +385,10 @@ const DevHome = () => {
                 <div className="contact-section text-left">
                   <div className="text-white flex flex-col">
                     <p>
-                      <a href="tel:+233262991910" className="flex">
+                      <a href="tel:+233594618786" className="flex">
                         {" "}
                         <BiPhoneCall size={20} />{" "}
-                        <span className="ml-2">+233 262 991 910</span>
+                        <span className="ml-2">+233 594 618 796</span>
                       </a>
                     </p>
                     <p>
@@ -383,12 +403,12 @@ const DevHome = () => {
                         </span>
                       </a>
                     </p>
-                    <p>
+                    {/* <p>
                       For all your trading, check this link out:{" "}
                       <Link to="/banki" className="underline pl-2">
                         @banki
                       </Link>
-                    </p>
+                    </p> */}
                   </div>
                   <div className="social flex justify-around mt-4 text-left">
                     <a href="https://github.com/bankah-junior" title="Gitbub">
@@ -429,7 +449,7 @@ const DevHome = () => {
               <div className="footer-section py-8 text-white text-lg px-12">
                 <div className="flex flex-col">
                   <span>Copyright &copy; 2023</span>
-                  <span>BankiDev&reg;</span>
+                  <span>Bankah&reg;</span>
                 </div>
               </div>
             </div>

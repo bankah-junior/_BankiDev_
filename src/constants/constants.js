@@ -2,7 +2,7 @@ export const MindMeldDB = {
   title: 'MindMeld',
   description: "This is an AI based website where users can read about AI. every article has its details when clicked. Explore the power of Artificial Intelligence and get to know the most asked questions about AI.",
   image: '../../../assets/Projects/MindMeld.PNG',
-  tags: "React, JavaScript",
+  tags: "React, TailwindCSS",
   source: 'https://github.com/bankah-junior/-MindMeld-',
   visit: 'https://mindmeld.netlify.app',
   id: 0
@@ -28,26 +28,6 @@ export const ConnectToBuyersDB = {
   id: 2,
 }
 
-export const ChattersDB = {
-  title: 'Chatters',
-  description: "Chatters is a WhatsApp clone. It's the UI that was cloned.",
-  image: '../../../assets/Projects/Chatters.PNG',
-  tags: "HTML, CSS, JavaScript",
-  source: 'https://github.com/bankah-junior/Frontend-Part-2',
-  visit: 'https://clonedwhatsapp.netlify.app',
-  id: 3,
-}
-
-export const NetflixCloneDB = {
-  title: 'Netflix Clone',
-  description: "This is a cloned landing page verson of the origianl Netfilx.",
-  image: '../../../assets/Projects/Netflix.PNG',
-  tags: "HTML, CSS",
-  source: 'https://github.com/bankah-junior/Frontend-Part-2',
-  visit: 'https://flix-cloned.netlify.app/',
-  id: 4,
-}
-
 export const DropOfWisdomDB = {
   title: 'Drop of Wisdom',
   description: "Drop of Wisdom is a motivational website but the main goal was to practice how login and signup feature works. These features has been added and works well. For the repository, visit my Github account.",
@@ -55,7 +35,7 @@ export const DropOfWisdomDB = {
   tags: "Node, MongoDB, JavaScript",
   source: 'https://github.com/bankah-junior/Login-Signup--DOW-',
   visit: 'https://github.com/bankah-junior/',
-  id: 5,
+  id: 3,
 }
 
 export const TheGuide = {
@@ -65,17 +45,17 @@ export const TheGuide = {
   tags: "HTML, CSS, JavaScript",
   source: 'https://github.com/bankah-junior/TheGuide.git',
   visit: 'https://theguideptt.netlify.app/',
-  id: 6,
+  id: 4,
 }
 
 export const ClonedIG = {
   title: 'Instagram Clone',
   description: "Cloned version of Instagram Home Page",
   image: '../../../assets/Projects/ClonedIG.png',
-  tags: "React, JavaScript",
+  tags: "React, TailwindCSS",
   source: 'https://github.com/bankah-junior/Cloned-IG-UI.git',
   visit: 'https://clonedinsta.netlify.app/',
-  id: 7,
+  id: 5,
 }
 
 export const Sneakers = {
@@ -85,7 +65,7 @@ export const Sneakers = {
   tags: "HTML, CSS, JavaScript",
   source: 'https://github.com/bankah-junior/Sneaker-Landing-Page.git',
   visit: 'https://olab-toes.netlify.app/',
-  id: 8,
+  id: 6,
 }
 
 export const AnimatedLogin = {
@@ -95,25 +75,65 @@ export const AnimatedLogin = {
   tags: "HTML, CSS",
   source: 'https://github.com/bankah-junior/Animated-Login.git',
   visit: 'https://codeinnlogin.netlify.app/',
-  id: 9,
+  id: 7,
 }
 
 export const BFX_Calc = {
   title: 'BFX_Calculator',
   description: "The world of forex trading involves some calculations which some finds it tideous. This is a free forex calculator which makes all your forex calculations with ease. The landing page provide a comprehensive of the sites functionalities.",
   image: '../../../assets/Projects/bfx-calculator.png',
-    tags: "React, JavaScript",
+    tags: "React, TailwindCSS",
   source: 'https://github.com/bankah-junior/BFX_Calculator.git',
   visit: 'https://bfx-calculator.netlify.app/',
-  id: 10,
+  id: 8,
 }
 
 export const Pips_Bank = {
   title: 'Pips Bank',
   description: "This website has been created to provide resources to people ready to learn Forex. 'Resource' is the active page and working on the 'Tutorial' page.",
   image: '../../../assets/Projects/pipsBank.png',
-    tags: "React, JavaScript",
+    tags: "React, TailwindCSS",
   source: 'https://github.com/bankah-junior/-pips-bank-.git',
   visit: 'https://pipsbank.netlify.app/',
+  id: 9,
+}
+
+export const Charity = {
+  title: 'Charity',
+  description: "This website has been created to Seek Out World Changers And Difference Makers Around The Globe, And Equip Them To Fulfill Their Unique Purpose.",
+  image: '../../../assets/Projects/charity.png',
+    tags: "React, TailwindCSS",
+  source: 'https://github.com/bankah-junior/ZapTek-Internship/tree/2.Charity',
+  visit: 'https://charityglob.netlify.app/',
+  id: 10,
+}
+
+export const GP = {
+  title: 'GP',
+  description: "This website has been created to provide digital services for clients all over the world",
+  image: '../../../assets/Projects/GP.png',
+    tags: "React, TailwindCSS",
+  source: 'https://github.com/bankah-junior/ZapTek-Internship/tree/3.GP',
+  visit: 'https://digitalmarketers.netlify.app/',
   id: 11,
+}
+
+export const Careari = {
+  title: 'Careari',
+  description: "This Job Search Portal was developed by team of 6 which I contributed. It aims at providing jobs for people world wide",
+  image: '../../../assets/Projects/Careari.png',
+    tags: "React, TailwindCSS",
+  source: 'https://github.com/bankah-junior/-pips-bank-.git',
+  visit: 'https://pipsbank.netlify.app/',
+  id: 12,
+}
+
+export const Techie = {
+  title: 'Techie',
+  description: "This site was developed by team of 6 which I contributed. Its goal is to help online business grow",
+  image: '../../../assets/Projects/Techie.png',
+    tags: "Next Js, TailwindCSS",
+  source: 'https://github.com/bankah-junior/tech-site',
+  visit: 'https://techie-site.netlify.app/',
+  id: 12,
 }

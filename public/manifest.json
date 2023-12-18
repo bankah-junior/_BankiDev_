@@ -1,6 +1,6 @@
 {
-  "short_name": "BANKIDEV",
-  "name": "BANKAH ANTHONY BEKOE",
+  "short_name": "Bankah Portfolio",
+  "name": "Anthony Bekoe Bankah",
   "icons": [
     {
       "src": "logo.jpg",
@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "logo.jpg",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "logo.jpg",
       "type": "image/png",
       "sizes": "512x512"
     }
